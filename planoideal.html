@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="planoideal.css">
+    <link rel="icon" href="imagem/Logotipo.png" type="image/png">
+    <title>Plano Ideal - Sky Wave</title>
+</head>
+<body>
+    <header>
+        <section class="top-header">
+            <div class="interface">
+                <div class="logotipo-container">
+                    <a href="index.html">
+                        <img src="imagem/SkyWave logo.png" alt="logotipo">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="questionario">
+        <div class="interface">
+            <h2 class="titulo-questionario">Qual é o melhor plano para você?</h2>
+            <p class="descricao">Responda as perguntas para encontrar o plano ideal.</p>
+
+            <form id="form-questionario">
+                <!-- Pergunta 1 -->
+                <div class="pergunta">
+                    <label for="tipoCliente">Você deseja internet para:</label>
+                    <select id="tipoCliente" name="tipoCliente" onchange="verificarTipoCliente()" required>
+                        <option value="lar">Lar</option>
+                        <option value="empresa">Empresa</option>
+                    </select>
+                </div>
+
+                <div id="perguntasAdicionais">
+                    <!-- Pergunta 2: Tamanho do ambiente -->
+                    <div class="pergunta">
+                        <label for="tamanhoAmbiente">Qual é o tamanho do ambiente?</label>
+                        <select id="tamanhoAmbiente" name="tamanhoAmbiente">
+                            <option value="pequeno">Pequeno</option>
+                            <option value="medio">Médio</option>
+                            <option value="grande">Grande</option>
+                        </select>
+                    </div>
+
+                    <!-- Pergunta 3: Quantos dispositivos? -->
+                    <div class="pergunta">
+                        <label for="quantosDispositivos">Quantos dispositivos tem no ambiente?</label>
+                        <input type="number" id="quantosDispositivos" name="quantosDispositivos" min="1" max="10" required>
+                    </div>
+
+                    <!-- Pergunta 4: Você trabalha com internet ou usa apenas para lazer? -->
+                    <div class="pergunta">
+                        <label for="usoInternet">Você trabalha com internet ou usa apenas para lazer?</label>
+                        <select id="usoInternet" name="usoInternet" required>
+                            <option value="trabalho">Trabalho</option>
+                            <option value="lazer">Lazer</option>
+                        </select>
+                    </div>
+
+                    <!-- Pergunta 5: Qual a sua prioridade? -->
+                    <div class="pergunta">
+                        <label for="prioridadeInternet">Você prefere?</label>
+                        <select id="prioridadeInternet" name="prioridadeInternet" required>
+                            <option value="cobertura">Cobertura para a casa inteira</option>
+                            <option value="velocidade">Alta velocidade</option>
+                            <option value="ambos">Ambos</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" class="btn-submit" onclick="determinarPlano()">Ver Resultado</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="resultado" id="resultado" style="display: none;">
+        <div class="interface">
+            <h2 class="titulo-resultado">Plano Recomendado</h2>
+            <p id="planoRecomendado">Seu plano ideal será exibido aqui.</p>
+            <a href="outrosplanos.html">
+            <button class="btn-assinar" id="btnAssinar" onclick="redirectToPlano()">Assine Agora</button> </a>
+        </div>
+    </section>
+    <script src="planoideal.js"></script>
+    <footer class="footer">
+        <p>&copy; 2024 Sky Wave. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

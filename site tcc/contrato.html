@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contrato.css">
+    <link rel="icon" href="imagem/Logotipo.png">
+    <title>Contrato</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Contrato</h1>
+        <!-- Alterado o "action" para "#" e adicionado o "onsubmit" -->
+        <form id="formContrato" action="https://api.staticforms.xyz/submit" method="post" onsubmit="redirectToConfirmation(event)">
+
+            <div class="form-row">
+                <label for="valorPlano">Preencha seu cadastro!</label>
+                <input type="number" id="valorPlano" name="valorPlano" step="0.01" readonly required>
+            </div>
+
+            <div class="form-row">
+                <label for="nome">Nome e Sobrenome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-row">
+                <label for="cpf">CPF/CNPJ:</label>
+                <input type="text" id="cpf" name="cpf" maxlength="18" required>
+            </div>
+
+            <div class="form-row">
+                <label for="rg">RG:</label>
+                <input type="text" id="rg" name="rg" maxlength="12" required>
+            </div>
+
+            <div class="form-row">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
+            </div>
+
+            <div class="form-row">
+                <label for="agendamento">Agendamento:</label>
+                <input type="datetime-local" id="agendamento" name="agendamento" required>
+            </div>
+
+            <div class="form-row">
+                <label for="bairro">Bairro:</label>
+                <select id="bairro" name="bairro" required>
+                    <option value="" disabled selected>Selecione um bairro</option>
+                    <option value="Centro">Centro</option>
+                    <option value="São Vicente">São Vicente</option>
+                    <option value="Santa Terezinha">Santa Terezinha</option>
+                    <option value="Mutirão">Mutirão</option>
+                    <option value="Jardim Universitário">Jardim Universitário</option>
+                    <option value="Jardim Social">Jardim Social</option>
+                    <option value="Cidade Jardim">Cidade Jardim</option>
+                    <option value="Jardim Caiçara">Jardim Caiçara</option>
+                    <option value="Vale Verde">Vale Verde</option>
+                    <option value="Jardim Itália">Jardim Itália</option>
+                    <option value="Conjunto Oito de Junho">Conjunto Oito de Junho</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua" required>
+            </div>
+
+            <div class="form-row">
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero" required>
+            </div>
+
+            <div class="form-row">
+                <label for="estadoCivil">Estado Civil:</label>
+                <select id="estadoCivil" name="estadoCivil" required>
+                    <option value="">Selecione</option>
+                    <option value="solteiro">Solteiro(a)</option>
+                    <option value="casado">Casado(a)</option>
+                    <option value="divorciado">Divorciado(a)</option>
+                    <option value="viuvo">Viúvo(a)</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento"  required>
+                <small id="errorNascimento">Você deve ter pelo menos 18 anos.</small>
+            </div>
+
+            <div class="form-row">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>                
+            </div>
+
+            <div class="form-row">
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="PR" selected>PR</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="cidade">Cidade:</label>
+                <select id="cidade" name="cidade" required>
+                    <option value="Palotina" selected>Palotina</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="planoInternet">Plano de Internet:</label>
+                <select id="planoInternet" name="planoInternet" required>
+                    <option value="" disabled selected>Selecione um plano de internet</option>
+                    <option value="800Mb">800Mb - R$ 119,90</option>
+                    <option value="600Mb">600Mb - R$ 99,90</option>
+                    <option value="200Mb">200Mb - R$ 79,90</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="planoStreaming">Plano de Streaming:</label>
+                <select id="planoStreaming" name="planoStreaming" required>
+                    <option value="" disabled selected>Selecione um plano</option>
+                    <option value="paramount">Paramount+ - R$ 7,00</option>
+                    <option value="hboMaxStandard">HBO Max Standard - R$ 19,95</option>
+                    <option value="hboMaxPlatinum">HBO Max Platinum - R$ 27,95</option>
+                    <option value="paramountHboMax">Paramount + HBO Max Standard - R$ 26,95</option>
+                    <option value="paramountHboMaxPlatinum">Paramount + HBO Max Platinum - R$ 34,95</option>
+                    <option value="naoQuero">Não vou querer</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="valorTotal">Valor Total:</label>
+                <input type="text" id="valorTotal" name="valorTotal" readonly>
+            </div>
+
+            <div class="form-row">
+                <button type="submit">Enviar contrato</button>               
+            </div>
+            
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const planoInternetSelect = document.getElementById("planoInternet");
+            const planoStreamingSelect = document.getElementById("planoStreaming");
+            const valorPlanoInput = document.getElementById("valorPlano");
+            const valorTotalInput = document.getElementById("valorTotal");
+            const telefoneInput = document.getElementById("telefone");
+
+            // Valores dos planos de internet
+            const planosInternet = {
+                "800Mb": 119.90,
+                "600Mb": 99.90,
+                "200Mb": 79.90
+            };
+
+            const planosStreaming = {
+                "paramount": 7.00,
+                "hboMaxStandard": 19.95,
+                "hboMaxPlatinum": 27.95,
+                "paramountHboMax": 26.95,
+                "paramountHboMaxPlatinum": 34.95,
+                "naoQuero": 0
+            };
+
+            function calcularTotal() {
+                const planoInternetSelecionado = planoInternetSelect.value;
+                const valorPlanoInternet = planosInternet[planoInternetSelecionado];
+                const planoStreamingSelecionado = planoStreamingSelect.value;
+                const valorStreaming = planosStreaming[planoStreamingSelecionado];
+
+                // Exibir o nome do plano no campo "Plano Selecionado"
+                valorPlanoInput.value = `R$ ${valorPlanoInternet.toFixed(2)}`;
+
+                const valorTotal = valorPlanoInternet + valorStreaming;
+                valorTotalInput.value = `R$ ${valorTotal.toFixed(2)}`;
+            }
+
+            // Máscara de telefone
+            telefoneInput.addEventListener("input", function(e) {
+                let valor = e.target.value.replace(/\D/g, '');
+                if (valor.length <= 11) {
+                    valor = valor.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+                }
+                e.target.value = valor;
+            });
+
+            planoInternetSelect.addEventListener("change", calcularTotal);
+            planoStreamingSelect.addEventListener("change", calcularTotal);
+
+            calcularTotal(); // Chama a função de cálculo ao carregar a página
+        });
+
+        // Função para redirecionar após o envio do formulário
+        function redirectToConfirmation(event) {           
+            window.location.href = "confirmacao.html"; // Redireciona para a página de confirmação
+        }
+    </script>
+
+    <input type="hidden" name="accessKey" value="28ff0844-094f-49fe-a42a-60ba0b583478">
+    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/confirmacao.html"> 
+    
+</body>
+</html>

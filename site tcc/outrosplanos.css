@@ -1,0 +1,130 @@
+/* Estilos gerais */
+body {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at 120.71% 50%, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-image: radial-gradient(circle at 120.71% 50%, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
+    padding: 20px;
+    text-align: center;
+    /* Removido a borda inferior */
+    border-bottom: none;
+}
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logotipo img {
+    max-width: 150px;
+    transition: transform 0.3s ease;
+}
+
+header .logotipo img:hover {
+    transform: scale(1.1); /* A logo expande ao passar o mouse */
+}
+
+/* Seção de Planos Disponíveis */
+.planos {
+    padding: 50px 20px;
+    text-align: center;
+    background: radial-gradient(circle at 120.71% 50%, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
+    margin: 20px auto;
+
+}
+
+.titulo-planos {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.descricao {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+    max-width: 800px;
+    margin: auto;
+}
+
+.lista-planos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.plano {
+    flex: 1;
+    max-width: 300px;
+    background-color: #b99df2;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.plano h3 {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.plano p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.plano ul {
+    list-style: none;
+    padding-left: 0;
+    color: #666;
+}
+
+.plano li {
+    margin-bottom: 10px;
+}
+
+/* Botão Assinar Agora */
+.btn-assinar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-assinar:hover {
+    background-color: #0056b3;
+}
+
+.btn-personalize {
+    display: block;
+    margin: 10px 0;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.destacar {
+    color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #9264cf27;
+    color: #555;
+}

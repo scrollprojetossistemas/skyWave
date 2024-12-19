@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: radial-gradient(circle at 120.71% 50%, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    background-color: #9264cf27;
+}
+
+.top-header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo do cabeçalho */
+}
+
+.top-header {
+    background-image: radial-gradient(circle at 120.71% 50%, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
+    padding: 20px 4%;
+}
+
+/* Efeito na logo */
+.top-header .logotipo img {
+    max-width: 150px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.top-header .logotipo img:hover {
+    transform: scale(1.1); /* A logo aumenta ao passar o mouse */
+}
+
+.interface {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Seção Sobre Nós */
+.sobre-nos {
+    background-image: radial-gradient(circle at 120.71% 50%, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.titulo-sobre {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.descricao {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #222;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.valores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.missao:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.visao:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.valores-principais:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.missao, .visao, .valores-principais {
+    flex: 1;
+    max-width: 300px;
+    background-color: #b99df2;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.342);
+}
+
+.missao h3, .visao h3, .valores-principais h3 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.missao p, .visao p, .valores-principais ul {
+    color: #222;
+}
+
+.valores-principais ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.valores-principais li {
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #9264cf27;
+    color: #555;
+}

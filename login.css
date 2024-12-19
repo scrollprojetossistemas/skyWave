@@ -1,0 +1,152 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    background-image: radial-gradient(circle at 120.71% 50%, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(146, 100, 207, 0.15); /* #9264cf27 em RGBA */
+    position: fixed; /* Para garantir que o menu fique fixo no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.top-header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-header {
+    background-image: radial-gradient(circle at 120.71% 50%, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
+    padding: 20px 4%;
+}
+
+.top-header .logotipo img {
+    max-width: 200px;
+}
+
+.interface {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Seção de Autenticação */
+.auth-section {
+    background-image: radial-gradient(circle at 120.71% 50%, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
+    padding: 150px 20px 50px 20px; /* Aumentado o padding-top para evitar sobreposição */
+    text-align: center;
+}
+
+.auth-title {
+    font-size: 2.5em;
+    margin: 80px 0 20px 0; /* Adiciona uma margem superior */
+    color: #333;
+    font-weight: 600;
+}
+
+
+.auth-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Reduzida a largura para compactar o formulário */
+    margin: auto;
+    border-top: 5px solid #9264cf;
+}
+
+
+.input-group {
+    flex: 1 1 45%; /* Ajustado para permitir que os grupos se alinhem em duas colunas */
+    min-width: 200px; /* Garantir responsividade em telas menores */
+}
+
+.input-group label {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+.input-group input, 
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-size: 1.1em;
+    margin-top: 20px; /* Garantir espaçamento acima do botão */
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #9264cf27;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .input-group {
+        flex: 1 1 100%;
+    }
+}

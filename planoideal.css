@@ -1,0 +1,148 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: radial-gradient(circle at 120.71% 50%, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #9264cf27;
+}
+
+.top-header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Alterado para centralizar a logo */
+}
+
+.top-header {
+    background-image: radial-gradient(circle at 120.71% 50%, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
+    padding: 20px 4%;
+}
+
+.logotipo-container {
+    display: flex;
+    justify-content: center;  /* Centraliza a logo horizontalmente */
+    align-items: center;  /* Centraliza a logo verticalmente */
+}
+
+.logotipo-container img {
+    max-width: 150px;  /* Mantém o tamanho da logo conforme desejado */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logotipo-container img:hover {
+    transform: scale(1.05);  /* Efeito de hover */
+}
+
+.interface {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Seção Questionário */
+.questionario {
+    background-image: radial-gradient(circle at 120.71% 50%, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.titulo-questionario {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.descricao {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+    max-width: 800px;
+    margin: auto;
+}
+
+.pergunta {
+    margin-bottom: 30px;
+}
+
+.pergunta label {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.pergunta select, .pergunta input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Seção Resultado */
+.resultado {
+    background-color: #b99df2;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.titulo-resultado {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#planoRecomendado {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.btn-assinar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-assinar:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #9264cf27;
+    color: #555;
+}

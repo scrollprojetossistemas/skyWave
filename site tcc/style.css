@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+
+/*Primeiro section*/
+
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+body{
+    background-image: radial-gradient(circle at 120.71% 50%, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
+}
+
+
+header{
+    width: 100%;
+    background-color: #9264cf27;
+}
+
+header .logotipo img {
+    max-width: 160px;
+    transition: transform 0.3s ease;
+    margin-top: 10px;
+}
+
+
+
+.top-header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.top-header{
+    background-image: radial-gradient(circle at 120.71% 50%, #f2bfff 0, #d5aeff 25%, #b99df2 50%, #9e8cd6 75%, #867bbc 100%);
+    padding: 20px 4%;
+}
+
+
+.top-header .logotipo img{
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+    
+}
+
+.top-header .logotipo img:hover{
+    transform: scale(1.1);    
+}
+
+
+.top-header .btn-social button{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+
+.bottom-header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+
+.bottom-header nav ul li a{
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 300;
+    transition: .3s;
+    display: block;
+}
+
+
+.bottom-header nav ul li a:hover{
+    background-color: #a1e4f567;
+    color: #9C6ADE;
+    box-shadow: inset 0 0 8px #00000049;
+}
+
+
+.drop-hover-P{
+    position: relative;
+}
+
+
+.drop-hover-P .drop-planos{
+    position: absolute;
+    background-color: #9c6ade8f;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+
+.drop-hover-P .drop-planos a{
+    padding: 10px;
+}
+
+
+.drop-hover-P:hover .drop-planos{
+    height: 90px;
+}
+
+
+
+
+
+.drop-hover-S{
+    position: relative;
+}
+
+
+.drop-hover-S .drop-Streaming{
+    position: absolute;
+    background-color: #9c6ade8f;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+
+.drop-hover-S .drop-Streaming a{
+    padding: 15px;
+}
+
+
+.drop-hover-S:hover .drop-Streaming{
+    height: 150px;
+}
+
+.drop-hover-L{
+    position: relative;
+
+}
+
+
+.drop-hover-L .drop-login{
+    position: absolute;
+    background-color: #9c6ade8f;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .2s;
+
+}
+
+
+.drop-hover-L .drop-login a{
+    padding: 15px;
+
+}
+
+
+.drop-hover-L:hover .drop-login{
+    height: 90px;
+}
+
+
+/*segundo section*/
+
+
+.header-inner-content{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 150px;
+}
+
+
+.header-bottom-side{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+}
+
+
+.header-bottom-side-left{
+    height: 100%;
+    flex-basis: 50%;
+}
+
+
+.header-bottom-side-left h2{
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.header-bottom-side-left p{
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.header-bottom-side-left button{
+    background-color: #0084ff;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+
+.header-bottom-side-left button:hover {
+    background-color: #004c94;
+}
+
+
+.header-bottom-side-right{
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header-bottom-side-right img{
+    width: 115%;
+
+}
+
+
+.nav-img-titulo{
+    width: 50px;
+    margin-right: 10px;
+}
+
+
+/*Estilos adicionais para menu responsivo*/ 
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para o nome do usuário e configurações */
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 16px;
+    color: #444;
+    margin-right: 20px;
+    font-family: "Oswald", sans-serif;
+    border-bottom: 2px solid #9264cf;
+    padding-bottom: 5px;
+}
+
+.user-info span {
+    font-weight: bold;
+    color: #3d3d3d;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.user-info a.user-settings {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    background: #ffffff50;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #007bff;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.user-info a.user-settings i {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.user-info a.user-settings:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    .bottom-header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #9c6ade8f;
+        position: absolute;
+        top: 100%; /* Alinha logo abaixo do header */ 
+        left: 0;
+    }
+
+    .bottom-header nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .bottom-header nav ul li {
+        text-align: center;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #9264cf27;
+    color: #555;
+}
